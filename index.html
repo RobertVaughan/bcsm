@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en"> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+        <title>Blockchain Social Media</title>
+        
+        <link href="Paradox-Grid/paradox.css" rel="stylesheet" type="text/css">
+        
+    </head> 
+    <body>
+        <div id="main-container">
+            <div id="main-side" class="pd-sidenav">
+                <div class="rw">
+                    <div class="cl t20"></div>
+                    <div class="cl t4 center">
+                        <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
+                    </div>
+                    <div class="cl t24">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="cl t24">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="cl t24">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="cl t24">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="cl t24">
+                        <a href="#">About</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content-container">
+                <div class="rw" style="background:#557A95; color: #fff; height: 40px;line-height: 40px;">
+                    <div class="cl t1"></div>
+                    <div class="cl t3">Name</div>
+                    <div class="cl t3">Menu 1 | Menu 2 | Menu 3 </div>
+                    
+                    <div class="cl t3">Name</div>
+                    <div class="cl t7">
+                        <input style="width: 90%; color: #333;background: #fff;border: 1px solid #5D5C61;text-align: left;margin-top: 5px;font-size: 14px;padding: 2px;"><button type="button" style="position:relative; text-align: right; width: 10%; background: none; border: none; outline: none; color: #fff;-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);transform: rotate(45deg);font-weight: 900; font-size: 25px;">&#9906;</button>
+                    </div>
+                    <div class="cl t4 center">C4</div>
+                    <div class="cl t3 center">C5</div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="Paradox-Grid/paradox.js"></script>
+        <script src="Paradox-Grid/waves.js"></script>
+        <script>
+            function toggleNav(){
+                var open_state = document.getElementById("main-side").style.marginLeft;
+                console.log(open_state);
+                if (open_state == "-210px") {
+                    document.getElementById("main-side").style.marginLeft = "0px";
+                    document.getElementById("content-container").style.marginLeft = "250px"; 
+                } else {
+                    document.getElementById("main-side").style.marginLeft = "-210px";
+                    document.getElementById("content-container").style.marginLeft = "40px";                    
+                }
+            }
+
+        </script>
+    </body> 
+</html>
