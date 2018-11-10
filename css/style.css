@@ -42,15 +42,33 @@
 	transform: rotate(45deg);
 	font-weight: 900; */
 }
-
 .menu-user {
 	font-weight: 700;
-	line-height: 32px;
-	padding-top: 4px;
+	line-height: 40px;
+	padding-top: 0px;
+	padding-right: 20px;
+	text-align: right;
+}
+.user-menu {
+	float: left;
+	line-height: 40px;
+	margin-top: 12px;
+	margin-right: 10px;
+	color: #fff;
+	text-align: right;
+}
+
+.user-menu > i {
+	cursor: pointer;
 }
 
 .menu-items {
-	
+	line-height: 40px;
+	margin-top: 12px;
+}
+
+.menu-items > i {
+	cursor: pointer;
 }
 
 .menu-profile {
@@ -58,8 +76,9 @@
 	height: 32px;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	margin-right: 8px;
-	float: left;
+	margin-left: 8px;
+	float: right;
+	margin-top: 4px;
 }
 
 .side-toggle {
