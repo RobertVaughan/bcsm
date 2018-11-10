@@ -47,7 +47,7 @@
 	line-height: 40px;
 	padding-top: 0px;
 	padding-right: 20px;
-	text-align: right;
+	text-align: left;
 }
 .user-menu {
 	float: left;
@@ -61,6 +61,10 @@
 .user-menu > i {
 	cursor: pointer;
 }
+.user-name {
+    float:left;
+    margin-left: 10px;
+}
 
 .menu-items {
 	line-height: 40px;
@@ -71,13 +75,12 @@
 	cursor: pointer;
 }
 
-.menu-profile {
+.user-profile {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	margin-left: 8px;
-	float: right;
+	float: left;
 	margin-top: 4px;
 }
 
