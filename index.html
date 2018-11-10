@@ -4,7 +4,15 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
         <title>Blockchain Social Media</title>
         
+		<link href="jqueryui/jquery-ui.css" rel="stylesheet" type="text/css">
+		<link href="jqueryui/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+		<link href="jqueryui/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+		
         <link href="Paradox-Grid/paradox.css" rel="stylesheet" type="text/css">
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         
     </head> 
     <body>
@@ -13,7 +21,7 @@
                 <div class="rw">
                     <div class="cl t20"></div>
                     <div class="cl t4 center">
-                        <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
+                        <span class="side-toggle" style="" onclick="toggleNav()">&#9776;</span>
                     </div>
                     <div class="cl t24">
                         <a href="#">About</a>
@@ -33,14 +41,13 @@
                 </div>
             </div>
             <div id="content-container">
-                <div class="rw" style="background:#557A95; color: #fff; height: 40px;line-height: 40px;">
+                <div class="rw menu-bar" style="">
                     <div class="cl t1"></div>
-                    <div class="cl t3">Name</div>
-                    <div class="cl t3">Menu 1 | Menu 2 | Menu 3 </div>
-                    
-                    <div class="cl t3">Name</div>
-                    <div class="cl t7">
-                        <input style="width: 90%; color: #333;background: #fff;border: 1px solid #5D5C61;text-align: left;margin-top: 5px;font-size: 14px;padding: 2px;"><button type="button" style="position:relative; text-align: right; width: 10%; background: none; border: none; outline: none; color: #fff;-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);transform: rotate(45deg);font-weight: 900; font-size: 25px;">&#9906;</button>
+					
+                    <div class="cl t3 menu-user"><img src="img/profile_pic.jpg" class="menu-profile center">Robert Vaughan</div>
+                    <div class="cl t4 menu-items">Menu 1 | Menu 2 | Menu 3 </div>
+                    <div class="cl t8">
+                        <input class="menu-search-input" style=""><button type="button" class="menu-search-button" style=""><i class="fas fa-search"></i></button>
                     </div>
                     <div class="cl t4 center">C4</div>
                     <div class="cl t3 center">C5</div>
@@ -49,17 +56,21 @@
         </div>
         
         <script src="Paradox-Grid/paradox.js"></script>
-        <script src="Paradox-Grid/waves.js"></script>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="jqueryui/jquery-ui.js"></script>
         <script>
             function toggleNav(){
                 var open_state = document.getElementById("main-side").style.marginLeft;
-                console.log(open_state);
-                if (open_state == "-210px") {
-                    document.getElementById("main-side").style.marginLeft = "0px";
-                    document.getElementById("content-container").style.marginLeft = "250px"; 
-                } else {
+                if (open_state == null || open_state === "0px")   {
+					console.log("close");
+					console.log(open_state);
                     document.getElementById("main-side").style.marginLeft = "-210px";
-                    document.getElementById("content-container").style.marginLeft = "40px";                    
+                    document.getElementById("content-container").style.marginLeft = "40px"; 
+                } else  {
+					console.log("open");
+					console.log(open_state);
+                    document.getElementById("main-side").style.marginLeft = "0px";
+                    document.getElementById("content-container").style.marginLeft = "250px";                    
                 }
             }
 
