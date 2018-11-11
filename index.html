@@ -13,7 +13,38 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        
+
+		<script>
+		  $( function() {
+			var availableTags = [
+			  "ActionScript",
+			  "AppleScript",
+			  "Asp",
+			  "BASIC",
+			  "C",
+			  "C++",
+			  "Clojure",
+			  "COBOL",
+			  "ColdFusion",
+			  "Erlang",
+			  "Fortran",
+			  "Groovy",
+			  "Haskell",
+			  "Java",
+			  "JavaScript",
+			  "Lisp",
+			  "Perl",
+			  "PHP",
+			  "Python",
+			  "Ruby",
+			  "Scala",
+			  "Scheme"
+			];
+			$( "#search" ).autocomplete({
+			  source: availableTags
+			});
+		  } );
+		</script>
     </head> 
     <body>
         <div id="main-container">
@@ -26,8 +57,8 @@
                     
                 </div>
                 <div class="cl t1 center"></div>
-                <div class="cl t8">
-                    <input class="menu-search-input" style=""><button type="button" class="menu-search-button" style=""><i class="fas fa-search"></i></button>
+                <div class="cl t8 ui-widget">
+                    <input class="menu-search-input" id="search" style=""><button type="button" class="menu-search-button" style=""><i class="fas fa-search"></i></button>
                 </div>
                 <div class="cl t1 center"></div>
                 <div class="cl t5 center">
@@ -37,7 +68,7 @@
                 </div>
                 <div class="cl t2 center"></div>
             </div>
-            <div class="rw" style="">
+            <div class="rw" id="social-feed-item-uniqueID">
                 <div class="cl t2"></div>
 				<div class="cl t4 content-panel" style="margin: 5px;"></div>
                 <div class="cl t12 content-panel" style="margin: 5px;">
@@ -46,6 +77,99 @@
 						<div class="cl t18">
 							<div class="rw">
 								<div class="cl t24"><span class="content-name">Robert Vaughan</span><span class="content-action">shared</span><span class="content-object">a picture</span></div>
+							</div>
+						</div>
+						<div class="cl t4 content-posted">
+							<div class="content-date">SAT NOV 10, 2018</div>
+							<div class="content-time">3:07 PM</div>
+						</div>
+						<div class="cl t1"><i class="fas fa-ellipsis-v fa-lg content-menu"></i></div>
+					</div>
+					<div class="rw content-card-body">
+						<div class="cl t24 center">
+							<img src="img/VelvetSkies.png" class="content-image">
+						</div>
+					</div>
+					<div class="rw content-card-reactions">
+						<div class="cl t2 center" id="content-comments">
+							<i class="fas fa-comment fa-lg content-comment" data-count="12"></i>
+						</div>
+						<div class="cl t2 center" id="content-likes">
+							<i class="fas fa-plus-circle fa-lg content-like" data-count="22"></i>
+						</div>
+						<div class="cl t2 center" id="content-dislikes">
+							<i class="fas fa-minus-circle fa-lg content-dislike" data-count="2"></i>
+						</div>
+						<div class="cl t14" style="text-align: right;">Eugene Cornelius, Meredith Mize Vaughan</div>
+						<div class="cl t4 center" style="text-align: right; padding-right: 20px;">: Top Commenters</div>
+					</div>
+					<div class="rw content-card-comments">
+						<div class="rw">
+							<div class="cl t6 user-comment-header">
+								<div class="">
+									<img src="img/profile_pic.jpg">
+                    				<span class="user-name">Robert Vaughan</span>
+								</div>
+							</div>
+							<div class="cl t18">
+								<div class="user-comment-body">
+									I agree, I would honestly be happy with just like/dislike myself and a back end rating algorithm that filters out content better. Like with Facebook, there are some people that I cannot filter content from at all. I'm guessing that it has to do with th…See More
+								</div>
+								<div class="cl t24" style="margin-bottom: 3px;"></div>
+								<div class="cl t15"></div>
+								<div class="cl t3 center" id="comment-likes">
+									<i class="fas fa-plus-circle fa-lg comment-like" data-count="3"></i>
+								</div>
+								<div class="cl t3 center" id="comment-dislikes">
+									<i class="fas fa-minus-circle fa-lg comment-dislike" data-count="2"></i>
+								</div>
+								<div class="cl t3 center" id="comment-replies">
+								<i class="fas fa-reply fa-lg comment-reply" data-count="7"></i></div>
+								<div class="cl t24" style="margin-bottom: 6px;"></div>
+								<div class="rw">
+									<div class="cl t6 user-comment-header">
+										<div class="">
+											<img src="img/profile_pic.jpg">
+											<span class="user-name">Robert Vaughan</span>
+										</div>
+									</div>
+									<div class="cl t18">
+										<div class="user-comment-body">
+											I agree, I would honestly be happy with just like/dislike myself and a back end rating algorithm that filters out content better. Like with Facebook, there are some people that I cannot filter content from at all. I'm guessing that it has to do with th…See More
+										</div>
+										<div class="cl t24" style="margin-bottom: 3px;"></div>
+										<div class="cl t15"></div>
+										<div class="cl t3 center" id="comment-likes">
+											<i class="fas fa-plus-circle fa-lg comment-like" data-count="3"></i>
+										</div>
+										<div class="cl t3 center" id="comment-dislikes">
+											<i class="fas fa-minus-circle fa-lg comment-dislike" data-count="2"></i>
+										</div>
+										<div class="cl t3 center" id="comment-replies">
+										<i class="fas fa-reply fa-lg comment-reply" data-count="7"></i></div>
+									</div>
+									<div class="cl t24"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rw content-card-footer">
+						
+					</div>
+				</div>
+                <div class="cl t4 content-panel" style="margin: 5px; "></div>
+                <div class="cl t2"></div>
+            </div>
+			
+			<div class="rw" id="social-feed-item-uniqueID">
+                <div class="cl t2"></div>
+				<div class="cl t4 content-panel" style="margin: 5px;"></div>
+                <div class="cl t12 content-panel" style="margin: 5px;">
+					<div class="rw content-card-header">
+						<div class="cl t1 center"><img src="img/profile_pic.jpg" class="content-profile"></div>
+						<div class="cl t18">
+							<div class="rw">
+								<div class="cl t24"><span class="content-name">Robert Vaughan</span><span class="content-action">shared</span><span class="content-object">original content</span></div>
 							</div>
 						</div>
 						<div class="cl t4 content-posted">
@@ -117,7 +241,33 @@
 										<div class="cl t3 center" id="comment-replies">
 										<i class="fas fa-reply fa-lg comment-reply" data-count="7"></i></div>
 									</div>
+									<div class="cl t24"></div>
 								</div>
+							</div>
+						</div>
+						<div class="rw" style="padding-top: 10px;">
+							<div class="cl t6 user-comment-header">
+								<div class="">
+									<img src="img/profile_pic.jpg">
+                    				<span class="user-name">Robert Vaughan</span>
+								</div>
+							</div>
+							<div class="cl t18">
+								<div class="user-comment-body">
+									I agree, I would honestly be happy with just like/dislike myself and a back end rating algorithm that filters out content better. Like with Facebook, there are some people that I cannot filter content from at all. I'm guessing that it has to do with th…See More
+								</div>
+								<div class="cl t24" style="margin-bottom: 3px;"></div>
+								<div class="cl t15"></div>
+								<div class="cl t3 center" id="comment-likes">
+									<i class="fas fa-plus-circle fa-lg comment-like" data-count="3"></i>
+								</div>
+								<div class="cl t3 center" id="comment-dislikes">
+									<i class="fas fa-minus-circle fa-lg comment-dislike" data-count="2"></i>
+								</div>
+								<div class="cl t3 center" id="comment-replies">
+								<i class="fas fa-reply fa-lg comment-reply" data-count="7"></i></div>
+								<div class="cl t24" style="margin-bottom: 6px;"></div>
+
 							</div>
 						</div>
 					</div>
@@ -132,23 +282,8 @@
         
         <script src="Paradox-Grid/paradox.js"></script>
 		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/main.js"></script>
 		<script src="jqueryui/jquery-ui.js"></script>
-        <script>
-            function toggleNav(){
-                var open_state = document.getElementById("main-side").style.marginLeft;
-                if (open_state == null || open_state === "0px")   {
-					console.log("close");
-					console.log(open_state);
-                    document.getElementById("main-side").style.marginLeft = "-210px";
-                    document.getElementById("content-container").style.marginLeft = "40px"; 
-                } else  {
-					console.log("open");
-					console.log(open_state);
-                    document.getElementById("main-side").style.marginLeft = "0px";
-                    document.getElementById("content-container").style.marginLeft = "250px";                    
-                }
-            }
 
-        </script>
     </body> 
 </html>
