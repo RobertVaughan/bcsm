@@ -1,6 +1,40 @@
-#main-container {
+/* ##########  COLOR PALETTE  ##########
+
+Feather 	- #77C9D4
+Deep Skies	- #164A6E
+Marine 		- #57BC90
+Forest		- #015249
+Sleek Grey	- #A5A5AF
+Shadows		- #343654
+Regal Red	- #ED4329
+*/
+
+body {
 	background: #f4f4f8;
-	height: 100%;
+}
+.bg-feather {
+	background: #77C9D4;
+}
+.bg-skies {
+	background: #164A6E;
+}
+.bg-marine {
+	background: #57BC90;
+}
+.bg-forest {
+	background: #015249;
+}
+.bg-sleekgrey {
+	background: #A5A5AF;
+}
+.bg-shadows {
+	background: #343654;
+}
+.bg-regalred {
+	background: #ED4329;
+}
+#main-container {
+	
 }
 #main-side{
     width: 250px;
@@ -146,6 +180,9 @@
 	text-align: right;
 	font-size: 10px;
 	margin-top: 2px;
+}
+.content-image {
+	max-width: 95%;
 }
 .content-menu {
 	line-height: 26px !important;
